@@ -16,9 +16,6 @@ use the html file to locate and view you work.
 Technologies Used
 Some of the languages and tools I used to create this app are; HTML.I used html to write the contents I want to be seen in my README and also used CSS to style it to look nice and also the JavaScript i also used Visual studio code to run the necessary codes.
 
-BDD
-|
-
 Support and contact details
 If you run into any issues or have questions, ideas or concerns. Feel free to contact me with the contact information below: TEL: 070 375 825 1 nirnuhsimel@gmail.com
 
