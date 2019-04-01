@@ -1,126 +1,73 @@
 
   
-<!DOCTYPE html>
+<!DOCTYPE >
 <html>
+
 <head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-  <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script   src="https://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
-    </script>
-  <script src="js/scripts.js"></script>
-  <title>Quiz Board</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
+<title>QUIZ BOARD</title>
+
 <body>
-  <div class="container">
-    
-    <form id="form1">
-        <h1>Quiz Board</h1>
-          <h3>Questions</h3>
-         
-            <div class="form-group">
-              <label>1. Which built-in method returns the calling string value converted to lower case?</label>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="Question1" value="0"> toLowerCase()
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="Question1" value="0"> toLower()
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="Question1" value="5"> chengeCase(case)
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="Question1" value="0"> None of the above.
-                </label>
-              </div>
-              <label> <span id="q1"></span> </label>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="panel panel-info">
+                <h1>QUIZ BOARD</h1>
             </div>
-            <div class="form-group">
-              <label>2.Which of the following function of Number object defines how many total digits to display of a number? </label>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="Question2" value="0"> toEponential()
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name=Question2 value="5"> toFixed()
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="Question2" value="0"> toLocaleString()
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="Question2" value="0"> toPrecion()
-                </label>
-              </div>
-              <label> <span id="q2"></span> </label>
-            </div>
-            <div class="form-group">
-              <label>3.Which of the following function of Array object returns the last (greatest) index of an element within the array equal to the specified value, or -1 if none is found? </label>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="Question3" value="0"> indexOf()
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="Question3" value="5"> join()
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="Question3" value="0"> lastIndexOf()
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="Question3" value="0"> map()
-                </label>
-              </div>
-              <label> <span id="q3"></span> </label>
-            </div>
-            <div class="form-group">
-              <label>4. Which of the following is correct about features of JavaScript?</label>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="Question4" value="0"> JavaScript is a lightweight, interpreted programming language.
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="Question4" value="0"> JavaScript is designed for creating network-centric applications
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="Question4" value="5"> JavaScript is complementary to and intergrated with java.
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="Question4" value="0"> All of the above
-                </label>
-              </div>
-              <label> <span id="q4"></span> </label>
-            </div>  
-        </div> 
+            <br>
+            <h2><em>Answer all the questions correctly Success.</em></h2>
 
-              <input type="submit" value="Submit" class=" btn btn-success">
-      </div>
-  <div class="finalResults">
-   <label><span class="display"></span></label>
-   </div>
-  </form>
+            <div class="well">
+                <form id="Quiz" action="index.html" method="POST" name="Quiz">
+                    <p><strong> 1. Which of the following type of variable takes precedence over other if names are
+                            same?</strong></p>
+                    <br>
+                    <input type="radio" name="questionOne" id="mc" value="wrong">global variable<br>
+                    <input type="radio" name="questionOne" id="mc" value="correct">local variable<br>
+                    <input type="radio" name="questionOne" id="mc" value="wrong">none of the above<br>
+            </div>
+            <div class="well">
+                <p><strong> 2. Which built-in method returns the calling string value converted to lower case?</strong></p>
+                <br>
+                <input type="radio" name="questionTwo" id="mc" value="wrong">changeCase()<br>
+                <input type="radio" name="questionTwo" id="mc" value="wrong">toLower()<br>
+                <input type="radio" name="questionTwo" id="mc" value="correct">toLowerCase()<br>
+            </div>
+            <div class="well">
+                <p><strong> 3. Which of the following function of Array object extracts a section of an array and
+                        returns a new array?</strong></p>
+                <br>
+                <input type="radio" name="questionThree" id="mc" value="correct">slice()<br>
+                <input type="radio" name="questionThree" id="mc" value="wrong">reverse()<br>
+                <input type="radio" name="questionThree" id="mc" value="wrong">shift()<br>
+            </div>
+            <div class="well">
+
+                <p><strong> 4. Which of the following function of string object combines the text of two strings and
+                        returns a new string?</strong></p>
+                <br>
+                <input type="radio" name="questionFour" id="mc" value="wrong">merge()<br>
+                <input type="radio" name="questionFour" id="mc" value="correct">concat()<br>
+                <input type="radio" name="questionFour" id="mc" value="wrong">add()<br>
+            </div>
+
+            <div class="well">
+                <p><strong> 5. Which of the following function of string object executes the search for a match between
+                        a regular expression and a specified string?</strong></p>
+                <br>
+                <input type="radio" name="questionFive" id="mc" value="wrong">replace()<br>
+                <input type="radio" name="questionFive" id="mc" value="wrong">match()<br>
+                <input type="radio" name="questionFive" id="mc" value="correct">search()<br>
+            </div>
+        </div>
+        <input type="button" name="results" value="SUBMIT" id="button" class="btn btn-danger" onClick="check();">
+        </form>
+    </div>
+    <div id="fifth-p">
+        <p id="correctNumber">HERE IS YOUR SCORE:</p>
+    </div>
 </body>
-
-</html>
+<html>
