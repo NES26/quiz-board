@@ -1,14 +1,13 @@
 
   
 var quizResults = function(one, two, three, four, five, six) {
-  return one + two + three + four + five + six;
+  return one + two + three + four;
 };
 
 $(document).ready(function() {
-  $(".clickable").click(function() {
-    $(".initially-showing").slideToggle();
+  $("#btn1").click(function() {
+    $("#form1").show();
 
-    $(".initially-hidden").slideToggle();
   });
 
   $(".initially-showing").submit(function(event) {
@@ -48,6 +47,9 @@ $(document).ready(function() {
       Question3,
       Question4,
     );
+    var resultScore = parseInt(quiz1)+parseInt(quiz2)+parseInt(quiz3)+parseInt(quiz4);
+    $("#finish").text("You SCored: " + resultScore + " out of 100");
+
 
     $(".display").text("You scored:" + result + " /30");
 
@@ -58,5 +60,7 @@ $(document).ready(function() {
   });
   $("#reset").click(function() {
     location.reload();
+
+   
   });
 });
