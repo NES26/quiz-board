@@ -1,5 +1,3 @@
-
-  
 function check() {
   var questionOne = document.Quiz.questionOne.value;
   var questionTwo = document.Quiz.questionTwo.value;
@@ -9,21 +7,18 @@ function check() {
 
 
   if (questionOne == "correct") {
-      right = right + 20;
+      right = right + 25;
   };
   if (questionTwo == "correct") {
-      right = right + 20;
+      right = right + 25;
   };
   if (questionThree == "correct") {
-      right = right + 20;
+      right = right + 25;
   };
   if (questionFour == "correct") {
-      right = right + 20;
+      right = right + 25;
   };
-  if (questionFive == "correct") {
-      right = right + 20;
-  };
-
+ 
 
 
   document.getElementById("fifth-p").style.visibility = "visible";
