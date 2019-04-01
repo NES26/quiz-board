@@ -1,5 +1,4 @@
 
-  
 {QUIZ BOARD}
  this website contains questions for the computer club students to test themselves on what they learnt during their course{01-04-2019} By Nina Simel.
 

@@ -59,8 +59,6 @@ $(document).ready(function() {
     $(".initially-showing").fadeOut();
   });
   $("#reset").click(function() {
-    location.reload();
-
-   
+    location.reload(); 
   });
 });
